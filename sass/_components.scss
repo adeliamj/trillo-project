@@ -250,7 +250,11 @@
     align-items: center;
     box-shadow: var(--line);
 
-
+    @media only screen and (max-width: $bp-small) {
+        flex-wrap: wrap;
+        justify-content: space-between;
+        
+    }
     &__heading {
         font-size: 2.25rem;
         font-weight: 300;
@@ -268,6 +272,10 @@
         // flex: 1;
         margin-right: auto;
         display: flex;
+
+        @media only screen and (max-width: $bp-small) {
+            margin-right: 2rem;
+        }
     }
 
     &__icon-star,
@@ -281,6 +289,10 @@
         font-size: 1.2rem;
         display: flex;
         vertical-align: center;
+
+        @media only screen and (max-width: $bp-small) {
+            margin-left: 2rem;
+        }
     }
 
     &__icon-location {
@@ -301,6 +313,7 @@
 
         @media only screen and (max-width: $bp-small) {
             padding: 0 1.5rem;
+            margin-right: 2rem;
         }
     }
 
@@ -396,6 +409,10 @@
     &__item {
         flex: 0 0 50%;
         margin-bottom: .7rem;
+
+        @media only screen and (max-width: $bp-small) {
+            flex: 0 0 100%;
+        }
     }
 
     &__item::before {
